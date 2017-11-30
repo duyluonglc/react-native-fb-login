@@ -1,0 +1,16 @@
+{
+  "name": "react-native-fb-login",
+  "version": "1.0.0",
+  "description": "facebook login with webview only",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "facebook",
+    "login",
+    "webview"
+  ],
+  "author": "DL",
+  "license": "ISC"
+}
