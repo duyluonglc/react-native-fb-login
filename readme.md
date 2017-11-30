@@ -1,4 +1,6 @@
 # React Native Facebook webview login
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/duyluonglc/react-native-fb-login.svg)](https://greenkeeper.io/)
 This package use webview to make oAuth with facebook, so you can logout then relogin with other facebook account easy by clear cookies
 
 # Install
