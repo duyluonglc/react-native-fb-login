@@ -1,6 +1,6 @@
 {
   "name": "react-native-fb-login",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "facebook login with webview only",
   "main": "index.js",
   "scripts": {

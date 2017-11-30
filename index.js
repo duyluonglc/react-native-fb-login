@@ -56,11 +56,12 @@ export default class Instagram extends Component {
   }
 
   render () {
-    const { clientId, redirectURI } = this.props
+    const { clientId, redirectURI, scope } = this.props
     const query = qs.stringify({
       client_id: clientId,
       redirect_uri: redirectURI,
-      response_type: 'token'
+      response_type: 'token',
+      scope: scope.join(',')
     })
     const uri = `https://www.facebook.com/v2.9/dialog/oauth?${query}`
     console.log(uri)
@@ -96,11 +97,13 @@ const propTypes = {
   redirectURI: PropTypes.string,
   styles: PropTypes.object,
   onLoginSuccess: PropTypes.func,
-  modalVisible: PropTypes.bool
+  modalVisible: PropTypes.bool,
+  scope: PropTypes.array
 }
 
 const defaultProps = {
   redirectURI: 'https://localhost',
+  scope: ['public_profile'],
   onLoginSuccess: (token) => {
     Alert.alert(
       'Alert Title',

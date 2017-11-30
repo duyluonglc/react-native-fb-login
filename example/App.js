@@ -50,6 +50,7 @@ export default class App extends Component {
           ref='facebookLogin'
           clientId='123456789'
           redirectURI='http://www.example.com'
+          scope={['public_profile']}
           onLoginSuccess={(response) => this.onLoginSuccess(response)}
         />
       </View>
